@@ -38,5 +38,6 @@ A process can belong to any of the 5 states below. it could differ in other Oper
 4. **Waiting:** If the process needs to access an I/O like an external drive, an external keyboard, it enters this waiting state, at this point, the processor is reassigned so other processes can use the processor.once I/O is completed, it enters into the Ready state where it is reassinged a processor and starts executing(Running) again
 5. **Termination:** The program has completed its execution or there is a sudden error that triggered its termination.
 
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/process-state.png?raw=true)
 
 ### Process control block
