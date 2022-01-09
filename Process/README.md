@@ -72,3 +72,11 @@ More reads: [Thread](https://en.wikipedia.org/wiki/Thread_(computing))
 ## Process scheduling
 Process scheduling is a situation tha occurs when there are excess processes available than the cores.The excess processes are resheduled to wait until the cores are free for use.
 This is prevalent in multicore system as a core can only execute one process at a time. SOme process can be CPU bound(**doing computations**) or I/O bound(**Less computation**)
+
+### Scheduling queues
+A scheduling queues contains processes that are ready to be executed. Its a linked list kind of data structure in which one process have a pointer to the next process
+There are two types of scheduling queues:
+1. **Ready queue:** Stores PCB's of processes ready to be waiting to be allocated to a CPU core for computation. The ready queue has a queue header that contain a pointer to the first PCB, the PCB also contain a pointer to the next PCB and so on.
+2. **Wait queue:** The wait queue stores previously executing PCBs which were deallocated. These PCBs are not terminating but waiting to be reallocted to a CPU core. For example a process requiring an I/O operation will be deallocated from the CPU due to the fact that I/O is a very slow process. these process are placed in the wait queue, once I/O is completed, it is reallocated.
+
+
