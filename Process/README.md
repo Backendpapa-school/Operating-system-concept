@@ -57,5 +57,7 @@ The following information found in a PCB includes:
 7. **Accounting management:** Contains information about processor used,time limit etc
 8. **I/0 status:** Contain information about I/O devices allocated to the process.
 
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/pcb.png?raw=true)
+
 More reads: [Process control block](https://en.wikipedia.org/wiki/Process_control_block)
 
