@@ -39,4 +39,4 @@ A process can belong to any of the 5 states below. it could differ in other Oper
 5. **Termination:** The program has completed its execution or there is a sudden error that triggered its termination.
 
 
-### Process control board
+### Process control block
