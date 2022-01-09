@@ -79,10 +79,16 @@ There are two types of scheduling queues:
 1. **Ready queue:** Stores PCB's of processes ready to be waiting to be allocated to a CPU core for computation. The ready queue has a queue header that contain a pointer to the first PCB, the PCB also contain a pointer to the next PCB and so on.
 2. **Wait queue:** The wait queue stores previously executing PCBs which were deallocated. These PCBs are not terminating but waiting to be reallocted to a CPU core. For example a process requiring an I/O operation will be deallocated from the CPU due to the fact that I/O is a very slow process. these process are placed in the wait queue, once I/O is completed, it is reallocated.
 
+
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/queue.png?raw=true)
+
+More reads: [CPU scheduling](https://en.wikipedia.org/wiki/Scheduling_(computing))
+
+
 ### CPU scheduling
 A CPU scheduler selects a process from the ready queue and assign it to a CPU core. The schedular runs every 100miliseconds. 
 I/O Bound process have short time staying in the CPU core.The scheduler deallocated while the I/O is taking place.
 CPU bound process cant stay in the process for too long, they are deallocated and reallocated again to another CPU cores
 
-
 ### Context switch
+
