@@ -41,3 +41,15 @@ A process can belong to any of the 5 states below. it could differ in other Oper
 ![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/process-state.png?raw=true)
 
 ### Process control block
+A process control block is a type of data structure that acts as a data repository for a particular process. It stores a lot of information regarding a process.
+
+The following information found in a PCB includes:
+1. **Process state:** The can be any of the 5 states- New, Waiting, Ready, Running, Terminated
+2. **Program number:** Each processes are assigned a number for identification
+3. **Program counter:** The counter increments to determine which next address of instruction is to be executed for a particular instruction.
+4. **CPU Registers:** Sets where the process information is to be saved to.
+5. **CPU Scheduling:** Determines when a process is allocated the processor.
+6. **Memory management information:**: Contains information such as the memory table
+7. **Accounting management:** Contains information about processor used,memory used etc
+8. **I/0 status:** Contain information about I/O devices allocated to the process.
+
