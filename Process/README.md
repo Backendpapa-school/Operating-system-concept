@@ -33,7 +33,7 @@ text    data     bss     dec     hex filename
 ### Process state
 A process can belong to any of the 5 states below. it could differ in other Operating System, but the concept is the same throughout
 1. **New:** A new process is created at the state, it is yet to be assigned a processor for execution.
-2. **Ready"** The new process is assigned to a processor at this state and is ready to run or execute.
+2. **Ready:** The new process is assigned to a processor at this state and is ready to run or execute.
 3. **Running:** The Assigned process is executing at this state
 4. **Waiting:** If the process needs to access an I/O like an external drive, an external keyboard, it enters this waiting state, at this point, the processor is reassigned so other processes can use the processor.once I/O is completed, it enters into the Ready state where it is reassinged a processor and starts executing(Running) again
 5. **Termination:** The program has completed its execution or there is a sudden error that triggered its termination.
