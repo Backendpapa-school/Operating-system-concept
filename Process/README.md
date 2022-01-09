@@ -9,7 +9,7 @@ A process is a program in execution.
 ## Process structure.
 Process is made up of 4 structures, the text section, the data section, the heap section and the stack section
 
-![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/process.png?raw=true)
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/process.png?raw=true)
 
 - **The Text Section:** This section contains executable codes or the program code.
 - **The Data Section:** contains global variables that have been set in the program code
@@ -20,7 +20,7 @@ The Text and Data section are static while the Heap and Stack section are dynami
 
 The addition and removal of activation records affects the dynamic memory allocation such that when a record is pushed to the stack, the Heap size grows (memory allocated increase, when the record is popped of the stack, the Heap shrinks as it returns memory to the system.
 
-![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/process-structure.png?raw=true)
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/process-structure.png?raw=true)
 
 
 
