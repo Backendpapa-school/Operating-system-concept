@@ -4,6 +4,8 @@ A process is a program in execution.
 2. Multisystems allowed loading of multiple programs and executing them all concurrently.
 3. we can say that a system is a collection of processes.
 
+More reads: [Process](https://en.wikipedia.org/wiki/Process_(computing))
+
 ## Process concepts
 ### Process structure.
 Process is made up of 4 structures, the text section, the data section, the heap section and the stack section
@@ -40,6 +42,8 @@ A process can belong to any of the 5 states below. it could differ in other Oper
 
 ![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/process-state.png?raw=true)
 
+More reads: [Process state](https://en.wikipedia.org/wiki/Process_state)
+
 ### Process control block
 A process control block is a type of data structure that acts as a data repository for a particular process. It stores a lot of information regarding a process.
 
@@ -50,6 +54,8 @@ The following information found in a PCB includes:
 4. **CPU Registers:** Sets where the process information is to be saved to.
 5. **CPU Scheduling:** Determines when a process is allocated the processor.
 6. **Memory management information:**: Contains information such as the memory table
-7. **Accounting management:** Contains information about processor used,memory used etc
+7. **Accounting management:** Contains information about processor used,time limit etc
 8. **I/0 status:** Contain information about I/O devices allocated to the process.
+
+More reads: [Process control block](https://en.wikipedia.org/wiki/Process_control_block)
 
