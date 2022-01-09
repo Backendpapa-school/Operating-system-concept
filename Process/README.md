@@ -69,3 +69,6 @@ A thread implies execution of instructions in a process. A single thread means t
 
 More reads: [Thread](https://en.wikipedia.org/wiki/Thread_(computing))
 
+## Process scheduling
+Process scheduling is a situation tha occurs when there are excess processes available than the cores.The excess processes are resheduled until the cores are free for use.
+This is prevalent in multicore system as a core can only execute one process at a time. SOme process can be CPU bound(**doing computations**) or I/O bound(**Less computation**)
