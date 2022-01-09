@@ -61,3 +61,6 @@ The following information found in a PCB includes:
 
 More reads: [Process control block](https://en.wikipedia.org/wiki/Process_control_block)
 
+### Thread
+A thread implies execution of instructions in a process. A single thread means there is just a single instruction being executed in a process, while multithread means multiple instructions are being executed in a process in real time. This is done in parallel as it is more efficient in multicore PCs
+
