@@ -80,3 +80,6 @@ There are two types of scheduling queues:
 2. **Wait queue:** The wait queue stores previously executing PCBs which were deallocated. These PCBs are not terminating but waiting to be reallocted to a CPU core. For example a process requiring an I/O operation will be deallocated from the CPU due to the fact that I/O is a very slow process. these process are placed in the wait queue, once I/O is completed, it is reallocated.
 
 
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/queue.png?raw=true)
+
+More reads: [CPU scheduling](https://en.wikipedia.org/wiki/Scheduling_(computing))
