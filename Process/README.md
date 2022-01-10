@@ -105,6 +105,15 @@ In Linux, the **systemd** always have a PID of 1, as it is the first process to 
 
 ![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/create.png?raw=true)
 
+When a child process is created, it requires certain resource like the CPU time, the memory files and I/O devices. The child process may require its resources direclty from the operating system or be restricted to obtaining from the subset of the parent resource. The latter is a better approach as it reduces the creation of too many child processes and prevents overloading the system.
+
+Two execution possibilities exists when a child process is created
+- The parent and the child process keep executing concurrently
+- The parent process waits untils all child process have finished executing and have terminated.
+
+Also two address space possibilities could occur
+- The child process have the same code and program as the parent.
+- The child program have entirely new program loaded into it.
 
 
 
