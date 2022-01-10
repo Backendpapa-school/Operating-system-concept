@@ -95,6 +95,13 @@ When an interrupt occurs in a system, the CPU core needs to save the state and c
 
 
 ## Operations on processes
+A system must process a way to create and terminate a process.
+
+### Process creation
+When a process is executing, it can create other processes which are called **child processes**. The creating process is called the **parent process** and the child process could as well create other process thereby forming a process tree.
+Every process has an identifier, an interger known as the PID or Process Identifier, it is a unique value assigned to each processes.
+
+In Linux, the **systemd** always have a PID of 1, as it is the first process to be created, the systemd in return creates other processes such as the logind, the sshd and many more process.
 
 
 
