@@ -91,4 +91,7 @@ I/O Bound process have short time staying in the CPU core.The scheduler dealloca
 CPU bound process cant stay in the process for too long, they are deallocated and reallocated again to another CPU cores
 
 ### Context switch
+When an interrupt occurs in a system, the CPU core needs to save the state and context of the current exexuting process to switch to a kernel routine or restore the state and context of another process to start executing on the CPU core. This is referred to as context switch. The context of a process is respresented by the PCB(Process Control Block) which contains information about the state, the register values.
+
+
 
