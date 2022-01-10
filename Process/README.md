@@ -115,5 +115,33 @@ Also two address space possibilities could occur
 - The child process have the same code and program as the parent.
 - The child program have entirely new program loaded into it.
 
+When a new process is created via fork() method, it returns 0. here is an example below
 
+```
+#include <sys/types.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+int main()
+{
+    pid_t pid;
+    /* fork a child process */
+    pid = fork();
+    if (pid < 0)
+    { /* error occurred */
+        fprintf(stderr, "Fork Failed");
+        return 1;
+    }
+    else if (pid == 0)
+    { /* child process */
+        execlp("/bin/ls", "ls", NULL);
+    }
+    else
+    { /* parent process */
+        /* parent will wait for the child to complete */
+        wait(NULL);
+        printf("Child Complete\n");
+    }
+}
+```
 
