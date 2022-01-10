@@ -103,6 +103,8 @@ Every process has an identifier, an interger known as the PID or Process Identif
 
 In Linux, the **systemd** always have a PID of 1, as it is the first process to be created, the systemd in return creates other processes such as the logind, the sshd and many more process.
 
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/create.png?raw=true)
+
 
 
 
