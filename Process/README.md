@@ -179,3 +179,10 @@ Android eliminates process from hierarchy 5 to 1
 ## Interprocess communication (IPC)
 A process can either be an independent process or an cooperating process.
 An Process is independent if it does not share data with any other process while a cooperating process is a process that is affected if a data is changed by another process which means both process are sharing data
+
+Reasons why cooperating processes exists could be  because:
+1. They both need access to a particular information, for example the clipboard.
+2. it needs to speed up it execution so the task or process is broken down to subtasks
+3. as per program design, you want process divided into child processes or threads.
+
+we can say Interprocess Communication is a mechanism that facilitate data exchange between two or more processes.
