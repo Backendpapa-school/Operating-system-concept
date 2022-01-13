@@ -177,3 +177,5 @@ Android eliminates process from hierarchy 5 to 1
 
 
 ## Interprocess communication (IPC)
+A process can either be an independent process or an cooperating process.
+An Process is independent if it does not share data with any other process while a cooperating process is a process that is affected if a data is changed by another process which means both process are sharing data
