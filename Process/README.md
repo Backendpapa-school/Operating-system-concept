@@ -157,3 +157,9 @@ There are three (3) scenarios that can trigger the exit() call.
 3. The parent process is exiting because some OS does not allow child processes to remain, they get terminated alongside (cascading termination).
 
 
+The parent process might wait() for a child process exit() status code. these status code can be pased into the wait().
+The parent has to call wait() to release the child process from the process table, if no wait() is called by the parent, the child process becomes a zombie process for a while.
+A parent that terminated without invoking wait, leaves its child processes as orphan.
+The init or systemd becomes the parent of such processes.
+
+
