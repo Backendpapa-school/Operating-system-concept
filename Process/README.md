@@ -145,6 +145,8 @@ int main()
 }
 ```
 
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/creation.png?raw=true)
+
 ### Process termination
 A process terminates when it is done executing all its statements, its ask the operating system to delete by calling exit() 
 The deleting or terminating process may return a status code via wait() to the parent process. All resource allocated to the process such as virtual or physical memory, I/O buffers are deallocated and returned to the OS.
