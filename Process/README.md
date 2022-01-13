@@ -194,3 +194,5 @@ There are two models of IPC mechanism:
 In the shared memory, a region of memory for information sharing is created which is shared by the cooperating processes. Process can exchange information, read and write between each other
 
 In message passing, its simple, information are exchanged by means of message toward each other.
+
+![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/ipc.png?raw=true)
