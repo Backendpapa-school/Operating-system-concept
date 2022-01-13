@@ -186,3 +186,11 @@ Reasons why cooperating processes exists could be  because:
 3. as per program design, you want process divided into child processes or threads.
 
 we can say Interprocess Communication is a mechanism that facilitate data exchange between two or more processes.
+
+There are two models of IPC mechanism:
+1. Shared memory
+2. Message passing
+
+In the shared memory, a region of memory for information sharing is created which is shared by the cooperating processes. Process can exchange information, read and write between each other
+
+In message passing, its simple, information are exchanged by means of message toward each other.
