@@ -145,3 +145,15 @@ int main()
 }
 ```
 
+### Process termination
+A process terminates when it is done executing all its statements, its ask the operating system to delete by calling exit() 
+The deleting or terminating process may return a status code via wait() to the parent process. All resource allocated to the process such as virtual or physical memory, I/O buffers are deallocated and returned to the OS.
+
+A process may terminate another process through an exit() system call, only the parent of that process can call the exit()
+
+There are three (3) scenarios that can trigger the exit() call.
+1. The child process has exceeded the allocated resources,
+2. The child process has completed its executions
+3. The parent process is exiting because some OS does not allow child processes to remain, they get terminated alongside (cascading termination).
+
+
