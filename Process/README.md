@@ -164,4 +164,16 @@ The parent has to call wait() to release the child process from the process tabl
 A parent that terminated without invoking wait, leaves its child processes as orphan.
 The init or systemd becomes the parent of such processes.
 
+### Android process hierarchy
+Due to limited memory challenge, mobile OS have a program termination rank as follow.
+1. **Foreground process:** Most visible activity which the user is interacting with
+2. **Background process:** Activities performed which the user is not aware of
+3. **Visible process:** Visible activite which the user is not directly interacting with but performing activity the foreground is using
+4. **Service:** Activities performed which the user is aware of such as streaming.
+5. **Empty process:** Has no activity
 
+Android eliminates process from hierarchy 5 to 1
+
+
+
+## Interprocess communication (IPC)
