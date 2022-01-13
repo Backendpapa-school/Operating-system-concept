@@ -196,3 +196,12 @@ In the shared memory, a region of memory for information sharing is created whic
 In message passing, its simple, information are exchanged by means of message toward each other.
 
 ![alt text](https://github.com/backendpapa/Operating-system-concept/blob/main/Process/ipc.png?raw=true)
+
+
+## IPC in shared memory systems
+The shared memory is an address space, it is located in the address space of the process that created the shared memory space.
+
+Normally, the OS does not allow access from other processes to information in another process's address space. for shared interaction to occur, all processes involved must agree to remove this restriction, then data exchange can occur.
+
+The type of data exchanged is out of the control of the OS, it only ensures that all processes involved do not write to the same location simultanously.
+
